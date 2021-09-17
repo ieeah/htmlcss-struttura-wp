@@ -9,7 +9,36 @@
 
 /* LAYOUT */
 
+.container {
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 50px 7%;
+}
 
+.container > *:not(footer) {
+    width: 100%;
+    margin-bottom: 40px;
+}
 
+header {
+    min-height: 150px;
+    background-color: teal;
+}
 
+section {
+    min-height: 300px;
+    background-color: turquoise;
+}
+
+main {
+    min-height: 500px;
+    background-color: wheat;
+}
+
+footer {
+    height: 150px;
+    background-color: sandybrown;
+    text-align: center;
+}
 /* CONTENT */
