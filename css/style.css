@@ -13,62 +13,88 @@
     display: table;
     clear: both;
 }
+
 /* LAYOUT */
 
 .container {
     width: 75%;
     margin: 0 auto;
-    background-color: black;
+    background-color: yellow;
     padding: 50px 7%;
 }
 
-.container > *:not(footer) {
+.container > * {
     width: 100%;
-    margin-bottom: 40px;
 }
 
-header {
-    min-height: 150px;
+header, section {
+    margin-bottom: 30px;
+}
+
+.container > *:last-child {
+    margin-bottom: 0;
+}
+
+.section_header {
+    height: 150px;
     background-color: teal;
 }
 
 section {
-    min-height: 300px;
+    height: 500px;
     background-color: red;
 }
 
 main {
-    background-color: wheat;
-    max-height: 500px;
+    background-color: sandybrown;
+    height: 700px;
+    margin-bottom: 10px;
 }
 
 footer {
-    height: 150px;
-    background-color: sandybrown;
+    height: 100px;
+    background-color: darkgoldenrod;
     text-align: center;
+    margin-bottom: 0;
 }
 
 main > * {
     max-width: 100%;
-    border: 2px solid red;
     float: left;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 200px;
+    padding: 0 15px 15px;
+}
+
+main > aside:first-of-type {
+    padding-right: 15px;
+    padding-bottom: 15px;;
+}
+
+main > aside:last-of-type {
+    padding-left: 15px;
+    padding-bottom: 15px;;
 }
 
 main > header {
-    background-color: seagreen;
     width: 100%;
-    height: 150
+    height: 100px;
+    padding: 0 0 15px;
 }
-
 
 main > aside {
     width: 20%;
+    height: 600px;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);;
 }
 
 .central_box {
     width: 60%;
-    background-color: slategrey;
+    height: 600px;
 }
+
 /* CONTENT */
